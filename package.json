@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "shapiro-winthers-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Corporate website of private personal injury law firm Shapiro Winthers located in Denver Colorado.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jon Rude <jrude@colorado-law.net>",
   "dependencies": {
     "gatsby": "^2.13.25",
     "gatsby-image": "^2.2.6",
@@ -11,7 +11,9 @@
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.7",
+    "gatsby-plugin-sitemap": "^2.2.3",
     "gatsby-source-filesystem": "^2.1.5",
+    "gatsby-source-wordpress": "^3.1.11",
     "gatsby-transformer-sharp": "^2.2.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -24,7 +26,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "none",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -35,9 +37,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "hhttps://github.com/jonnyrude/website-rebuild-1.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jonnyrude/website-rebuild-1/issues"
   }
 }
