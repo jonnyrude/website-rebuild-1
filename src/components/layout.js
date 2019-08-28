@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Button from "@material-ui/core/Button"
 
 import Header from "./header"
 import "./layout.css"
@@ -40,6 +41,9 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+        <Button variant="contained" color="primary">
+          MATERIAL BUTTON!!
+        </Button>
       </div>
     </>
   )

@@ -1,49 +1,96 @@
+/* Nav on Mobile - small screens */
+
+/* .nav_nav {
+  top: 100%;
+  left: 100%;
+  position: absolute;
+  bottom: 0;
+} */
+
 .nav_nav {
-  display: block;
+  display: flex;
+  flex-flow: row wrap;
   background-color: #ffffff;
-  height: 40px;
+  height: auto;
+  font-size: 16px;
 }
 
 .nav_ul {
-  height: 40px;
+  flex-basis: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+
   list-style: none;
   margin: 0;
   text-align: center;
 }
 
 .nav_li {
-  display: inline-block;
   height: 40px;
-  padding-right: 45px;
+
+  padding-top: 4px;
   box-sizing: border-box;
   margin: 0;
 }
 
-/* .nav_li:hover {
-
-  color: #55a098;
-} */
+.nav_button {
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+  float: right;
+  width: 70px;
+  height: 50px;
+  margin-left: auto;
+  border-radius: 20%;
+  background-color: #074664;
+  color: white;
+}
 
 .nav_a {
   display: block;
-  align-items: center;
   box-sizing: border-box;
-  height: 40px;
-  border-top: 2px solid transparent;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  height: 100%;
   color: #848e8b;
-  font-size: 20px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0px;
   font-style: normal;
   text-decoration: none;
-  /* Animation */
-  transition-property: color, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  border-top: 2px solid transparent;
 }
 
-.nav_a:hover {
-  border-color: #55a098;
-  color: #55a098;
+.collapsed {
+  display: block;
+  /* flex-shrink: 1; */
+  height: 0 !important;
+  color: red;
+}
+
+@media screen and (min-width: 701px) {
+  .nav_button {
+    display: none;
+  }
+
+  .nav_ul {
+    flex-flow: row nowrap;
+    height: 40px;
+  }
+
+  .nav_li {
+    padding-right: 45px;
+  }
+  .nav_a {
+    height: 40px;
+    font-size: 20px;
+    /* Animation */
+    transition-property: color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  .nav_a:hover {
+    border-color: #55a098;
+    color: #55a098;
+  }
 }

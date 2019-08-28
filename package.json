@@ -5,9 +5,12 @@
   "version": "0.1.0",
   "author": "Jon Rude <jrude@colorado-law.net>",
   "dependencies": {
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/styles": "^4.3.0",
     "gatsby": "^2.13.25",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
+    "gatsby-plugin-material-ui": "^2.1.5",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.7",
